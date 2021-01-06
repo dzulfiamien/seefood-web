@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     
+    <title>SeeFood</title>
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -13,13 +15,20 @@
     <link rel="stylesheet" href="/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/sfuidisplay.css">
-    <link rel="icon" href="assets/img/icon.ico">
+    <!-- Favicon  -->
+    <link rel="icon" href="{{ asset('images/icon.png') }}">
+    {{-- <link rel="icon" href="assets/img/icon.ico"> --}}
+    
+    <!-- Font Awesome  -->
+    {{-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> --}}
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <nav class="navbar navbar-transparent navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <img class="navbar-brand__regular" src="assets/img/brand-logo.png" alt="brand-logo">
             </a>
             <button data-toggle="collapse" data-target="#navbarResponsive"
@@ -30,6 +39,8 @@
                 <ul class="nav navbar-nav ml-auto text-uppercase">
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                             href="#services">Services</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="#features">Features</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                             href="#portfolio">Portfolio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
@@ -42,7 +53,7 @@
             </div>
             <div class="d-flex align-items-center ml-lg-1 ml-xl-2 mr-5 mr-sm-6 m-lg-0">
                 <div>
-                    <a href="inner-login.html" class="btn btn-size--lg btn-hover--3d btn-bg--cta--4" style="background-color: #FED136;"><span class="btn__text">Login</span></a>
+                    <a href="inner-login.html" class="btn btn-size--lg btn-hover--3d btn-bg--cta--4" style="background-color: #FED136;"><span class="btn__text">LOGIN</span></a>
                 </div>
             </div>
         </div>

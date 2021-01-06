@@ -5,14 +5,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="text-uppercase mb-5 section-heading" style="color: white;">Services</h3>
+                <h2 class="text-uppercase mb-5 section-heading" style="color: white;">Services</h2>
 
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i> 
                     <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="section-heading mt-3" style="color: white;">Fast and Portable</h4>
@@ -21,7 +21,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-hand-spock-o fa-stack-1x fa-inverse ml-1"></i>
+                    <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="section-heading mt-3" style="color: white;">Powerful</h4>
                 <p class="text-muted">Recognizes more than 7000 kinds of food around the world.</p>
@@ -37,12 +37,12 @@
         </div>
     </div>
 </section>
-<section class="work" style="background: #F5F4F8;">
+<section id="features" class="work" style="background: #F5F4F8;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
-                <div class="heading text-center wow animated slideInUp">
-                    <h3>HOW IT WORKS</h3>
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-5 text-uppercase text-dark section-heading">HOW IT WORKS</h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -79,7 +79,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="mb-5 text-uppercase section-heading">OUR PARTNER</h3>
+                <h2 class="mb-5 text-uppercase text-dark section-heading">OUR PARTNER</h2>
 
             </div>
         </div>
@@ -124,7 +124,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="mb-5 text-uppercase" style="color: white;">About</h3>
+                <h2 class="mb-5 text-uppercase" style="color: white;">About</h2>
             </div>
         </div>
         <div class="row">
@@ -230,7 +230,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="mb-5 text-uppercase">TEAM</h3>
+                <h2 class="mb-5 text-uppercase text-dark">TEAM</h2>
             </div>
         </div>
         <div class="row">
@@ -239,9 +239,9 @@
                     <h5 class="mt-3">Jian Yang</h5>
                     <p class="text-muted">Founder</p>
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -251,9 +251,9 @@
                     <h5 class="mt-3">Richard Hendricks</h5>
                     <p class="text-muted">Co-Founder</p>
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -263,9 +263,9 @@
                     <h5 class="mt-3">Dinesh Chugtai</h5>
                     <p class="text-muted">Lead Engineer</p>
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -275,9 +275,9 @@
                     <h5 class="mt-3">(Bertram) Gilfoyle</h5>
                     <p class="text-muted">Systems Architect</p>
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -286,9 +286,9 @@
                     <h5 class="mt-3">Jared Dunn</h5>
                     <p class="text-muted">Bussiness Development</p>
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -297,12 +297,18 @@
 </section>
 <section class="py-5">
     <div class="container">
-        <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+        
         <section class="pt-5 pb-5">
             <div class="container">
-                <h2 class="text-center">What other say for us</h2>
-                <hr class="midline">
-                <h5 class="text-center mb-5">Our team created best opportunities for your business.</h5>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase text-dark section-heading">What Other Say</h2>
+                        <hr class="midline">
+                        <h3 class="text-muted mb-5">Our team created best opportunities for your business.</h3>
+                    </div>
+                </div>
+                
+                
                 <div class="card col-md-12 mt-2">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
                         data-interval="100000">
@@ -407,7 +413,7 @@
         </section>
     </div>
 </section>
-<section id="contact" style="background-image:url('assets/img/map-image.png');">
+<section id="contact" style="background-image:url('assets/img/stay-in-touch.png');">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
