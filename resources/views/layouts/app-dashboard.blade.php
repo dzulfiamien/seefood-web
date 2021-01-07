@@ -8,7 +8,7 @@
     <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
     <!-- Title -->
-    <title>Space - Responsive Admin Dashboard Template</title>
+    <title>Dashboar | SeeFood</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">

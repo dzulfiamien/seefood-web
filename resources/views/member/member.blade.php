@@ -9,18 +9,18 @@
             <!-- Page Inner -->
             <div class="page-inner">
                 <div class="page-title">
-                    <h3 class="breadcrumb-header">Data Tables</h3>
+                    <h3 class="breadcrumb-header">List User</h3>
                 </div>
             <div id="main-wrapper">
                 <div class="row">
                     <div class="col-md-12">
                     
                         <div class="panel panel-white">
-                            <div class="panel-heading">
+                            {{-- <div class="panel-heading">
                                 <h4 class="panel-title">Add rows</h4>
-                            </div>
+                            </div> --}}
                             <div class="panel-body">
-                                <button type="button" class="btn btn-success m-b-sm" data-toggle="modal" data-target="#myModal">Add new row</button>
+                                {{-- <button type="button" class="btn btn-success m-b-sm" data-toggle="modal" data-target="#myModal">Add new row</button> --}}
                                 <!-- Modal -->
                                 <form id="add-row-form" action="javascript:void(0);">
                                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

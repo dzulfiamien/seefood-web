@@ -1,7 +1,7 @@
        <!-- Page Sidebar -->
        <div class="page-sidebar">
-        <a class="logo-box" href="index.html">
-            <span>Space</span>
+        <a class="logo-box" href="#">
+            <span>SeeFood</span>
             <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
             <i class="icon-close" id="sidebar-toggle-button-close"></i>
         </a>
@@ -15,7 +15,7 @@
                     </li>
                     <li class="{{ (request()->is('member')) ? 'active-page' : '' }}">
                         <a href="{{ route('member') }}">
-                            <i class="menu-icon icon-help_outline"></i><span>Member</span>
+                            <i class="menu-icon icon-layer"></i><span>Member</span>
                         </a>
                     </li>
                     <li class="menu-divider"></li>
@@ -55,7 +55,7 @@
         <div class="navbar-header">
             <div class="logo-sm">
                 <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                <a class="logo-box" href="index.html"><span>Space</span></a>
+                <a class="logo-box" href="#"><span>SeeFood</span></a>
             </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <i class="fa fa-angle-down"></i>
