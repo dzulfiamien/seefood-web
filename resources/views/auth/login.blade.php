@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body class="theme-orange" data-spy="scroll" data-target="#navbar-nav" data-appearance="light" data-animation="false" data-appearance="dark">
-    <!-- =========== Start of Loader ============ -->
+    {{-- <!-- =========== Start of Loader ============ -->
     <div class="preloader">
         <div class="wrapper">
             <div class="blobs">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <!-- =========== End of Loader ============ -->
+    <!-- =========== End of Loader ============ --> --}}
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
