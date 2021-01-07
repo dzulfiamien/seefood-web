@@ -1,25 +1,43 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'SeeFood') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Seefood</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
+    <!-- fonts -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body>
+<body class="theme-orange" data-spy="scroll" data-target="#navbar-nav" data-appearance="light" data-animation="false" data-appearance="dark">
+    <!-- =========== Start of Loader ============ -->
+    <div class="preloader">
+        <div class="wrapper">
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <div>
+                <div class="loader-canvas canvas-left"></div>
+                <div class="loader-canvas canvas-right"></div>
+            </div>
+        </div>
+    </div>
+    <!-- =========== End of Loader ============ -->
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

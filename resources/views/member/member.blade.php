@@ -1,0 +1,265 @@
+@include('layouts.app-dashboard')
+<body>
+        
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Page Sidebar -->
+        @include('layouts.sidebar')
+            </div><!-- /Page Header -->
+            <!-- Page Inner -->
+            <div class="page-inner">
+                <div class="page-title">
+                    <h3 class="breadcrumb-header">Data Tables</h3>
+                </div>
+            <div id="main-wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                    
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Add rows</h4>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-success m-b-sm" data-toggle="modal" data-target="#myModal">Add new row</button>
+                                <!-- Modal -->
+                                <form id="add-row-form" action="javascript:void(0);">
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <input type="text" id="name-input" class="form-control" placeholder="Name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" id="position-input" class="form-control" placeholder="Position" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="number" id="age-input" class="form-control" placeholder="Age" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" id="date-input" class="form-control date-picker" placeholder="Start Date" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="number" id="salary-input" class="form-control" placeholder="Salary" required>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" id="add-row" class="btn btn-success">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                                <div class="table-responsive">
+                                    <table id="example3" class="display table" style="width: 100%; cellspacing: 0;">
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th>No</th>
+                                                <th>Name</th>
+                                                <th>Address</th>
+                                                <th>Role</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php $no=1;?>
+                                            @foreach ($member as $m)
+                                            <tr>
+                                                <th><?php echo $no++; ?></th>
+                                                    <th>{{ $m->name }}</th>
+                                                    <th>{{ $m->email}}</th>
+                                                    <th>@if ($m->role == 1)
+                                                        Admin
+                                                    @else
+                                                        Pengguna
+                                                    @endif</th>
+                                                </tr>
+                                                @endforeach
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Row -->
+            </div><!-- Main Wrapper -->
+            <div class="page-footer">
+                <p>Made with <i class="fa fa-heart"></i> by stacks</p>
+            </div>
+            </div><!-- /Page Inner -->
+            <div class="page-right-sidebar" id="main-right-sidebar">
+                <div class="page-right-sidebar-inner">
+                    <div class="right-sidebar-top">
+                        <div class="right-sidebar-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active" id="chat-tab"><a href="#chat" aria-controls="chat" role="tab" data-toggle="tab">chat</a></li>
+                                <li role="presentation" id="settings-tab"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="icon-close"></i></a>
+                    </div>
+                    <div class="right-sidebar-content">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="chat">
+                                <div class="chat-list">
+                                    <span class="chat-title">Recent</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">David</span>
+                                            <span class="chat-text">where u at?</span>
+                                            <span class="chat-time">08:50</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Daisy</span>
+                                            <span class="chat-text">Daisy sent a photo.</span>
+                                            <span class="chat-time">11:34</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="chat-list">
+                                    <span class="chat-title">Older</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Tom</span>
+                                            <span class="chat-text">You: ok</span>
+                                            <span class="chat-time">2d</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Anna</span>
+                                            <span class="chat-text">asdasdasd</span>
+                                            <span class="chat-time">4d</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Liza</span>
+                                            <span class="chat-text">asdasdasd</span>
+                                            <span class="chat-time">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="load-more-messages"  data-toggle="tooltip" data-placement="bottom" title="Load More">&bull;&bull;&bull;</a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                                <div class="right-sidebar-settings">
+                                    <span class="settings-title">General Settings</span>
+                                    <ul class="sidebar-setting-list list-unstyled">
+                                        <li>
+                                            <span class="settings-option">Notifications</span><input type="checkbox" class="js-switch" checked />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Activity log</span><input type="checkbox" class="js-switch" checked />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Automatic updates</span><input type="checkbox" class="js-switch" />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Allow backups</span><input type="checkbox" class="js-switch" />
+                                        </li>
+                                    </ul>
+                                    <span class="settings-title">Account Settings</span>
+                                    <ul class="sidebar-setting-list list-unstyled">
+                                        <li>
+                                            <span class="settings-option">Chat</span><input type="checkbox" class="js-switch" checked />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Incognito mode</span><input type="checkbox" class="js-switch" />
+                                        </li>
+                                        <li>
+                                            <span class="settings-option">Public profile</span><input type="checkbox" class="js-switch" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-right-sidebar" id="chat-right-sidebar">
+                <div class="page-right-sidebar-inner">
+                    <div class="right-sidebar-top">
+                        <div class="chat-top-info">
+                            <span class="chat-name">Noah</span>
+                            <span class="chat-state">2h ago</span>
+                        </div>
+                        <a href="javascript:void(0)" class="right-sidebar-toggle chat-sidebar-close pull-right" data-sidebar-id="chat-right-sidebar"><i class="icon-keyboard_arrow_right"></i></a>
+                    </div>
+                    <div class="right-sidebar-content">
+                        <div class="right-sidebar-chat slimscroll">
+                            <div class="chat-bubbles">
+                            <div class="chat-start-date">02/06/2017 5:58PM</div>
+                                <div class="chat-bubble them">
+                                    <div class="chat-bubble-img-container">
+                                        <img src="http://via.placeholder.com/38x38" alt="">
+                                    </div>
+                                    <div class="chat-bubble-text-container">
+                                        <span class="chat-bubble-text">Hello</span>
+                                    </div>
+                                </div>
+                                <div class="chat-bubble me">
+                                    <div class="chat-bubble-text-container">
+                                        <span class="chat-bubble-text">Hello!</span>
+                                    </div>
+                                </div>
+                            <div class="chat-start-date">03/06/2017 4:22AM</div>
+                                <div class="chat-bubble me">
+                                    <div class="chat-bubble-text-container">
+                                        <span class="chat-bubble-text">lorem</span>
+                                    </div>
+                                </div>
+                                <div class="chat-bubble them">
+                                    <div class="chat-bubble-img-container">
+                                        <img src="http://via.placeholder.com/38x38" alt="">
+                                    </div>
+                                    <div class="chat-bubble-text-container">
+                                        <span class="chat-bubble-text">ipsum dolor sit amet</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-write">
+                            <form class="form-horizontal" action="javascript:void(0);">
+                                <input type="text" class="form-control" placeholder="Say something">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /Page Content -->
+    </div><!-- /Page Container -->
+    
+    
+    @include('layouts.script')
+</body>

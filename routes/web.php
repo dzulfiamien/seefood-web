@@ -24,8 +24,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
-// Auth::routes();
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard')->middleware('auth');
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/member', 'MemberController@index')->name('member')->middleware('auth');
