@@ -54,6 +54,8 @@
                                 href="#about">About</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" 
                             href="#team">Team</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" 
+                            href="#testimoni">Testimoni</a></li>    
                         <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                                 href="#contact">Contact</a></li>
                     </ul>

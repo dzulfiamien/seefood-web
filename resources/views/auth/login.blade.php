@@ -84,7 +84,7 @@
                                     @csrf
                                     <div class="form-group">
                                         <label for="email" class="form__label text-uppercase font-size--15 font-w--500" {{ __('E-Mail Address') }} style="color: #12141f;">Email Address</label>
-                                        <input id="email" type="email" class="form-control" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter your email address" />
+                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter your email address" style="color: #12141f" />
                                             @error('email')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -101,7 +101,7 @@
                                             @endif
                                             
                                         </div>
-                                        <input id="password" type="password" class="form-control" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Choose a password" />
+                                        <input style="color: #12141f" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Your password" style="color: #12141f"/>
                                             @error('password')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
