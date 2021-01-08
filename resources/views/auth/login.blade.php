@@ -79,7 +79,7 @@
                         </div>
                         <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto">
                             
-                            <div class="form--v5 bg-color--primary-light--1 px-3 py-4 px-md-5 pt-md-6 rounded--10">
+                            <div class="form--v5 color--black bg-color--primary-light--1 px-3 py-4 px-md-5 pt-md-6 rounded--10">
                                 <form method="POST" action="{{ route('login') }}" class="form">
                                     @csrf
                                     <div class="form-group">
