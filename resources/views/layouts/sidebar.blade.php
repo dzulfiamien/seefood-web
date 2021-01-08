@@ -1,21 +1,21 @@
        <!-- Page Sidebar -->
        <div class="page-sidebar">
         <a class="logo-box" href="#">
-            <span>SeeFood</span>
-            <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
+            <span style="color: #343A40">SeeFood</span>
+            <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button" style="color: #343A40" href="></i>
             <i class="icon-close" id="sidebar-toggle-button-close"></i>
         </a>
         <div class="page-sidebar-inner">
             <div class="page-sidebar-menu">
                 <ul class="accordion-menu">
                     <li class="{{ (request()->is('dashboard')) ? 'active-page' : '' }}">
-                        <a href="{{ route('dashboard')}}">
-                            <i class="menu-icon icon-home4"></i><span>Dashboard</span>
+                        <a style="color: #343A40" href="{{ route('dashboard')}}">
+                            <i class="menu-icon icon-home4" style="color: #343A40"></i><span>Dashboard</span>
                         </a>
                     </li>
                     <li class="{{ (request()->is('member')) ? 'active-page' : '' }}">
-                        <a href="{{ route('member') }}">
-                            <i class="menu-icon icon-layer"></i><span>Member</span>
+                        <a style="color: #343A40" href="{{ route('member') }}">
+                            <i class="menu-icon icon-layers" style="color: #343A40"></i><span>Member</span>
                         </a>
                     </li>
                     <li class="menu-divider"></li>
